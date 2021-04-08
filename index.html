@@ -5,27 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/review.js" defer></script>
+    <script src="src/reviews.js" defer></script>
     <script src="src/index.js" defer></script>
     <script src="src/menu.js" defer></script>
+    <script></script>
     <title>Restaurant</title>
   </head>
   <body>
     <h1>The Factory</h1>
-    <h2>Menu</h2>
 
     <!-- Page 1 Landing page -->
-    <div>
-      <!-- Btn to Menu -->
+    <div id="landig-page">
+      <div class="menu-link-container">
+        <a href="#" onclick="return show('menu-page', 'landig-page')">
+          <p>Take me to the</p>
+          <h2>Menu</h2>
+        </a>
+      </div>
       <!-- Testimonial -->
+      <section class="review-section">
+        <img src="./images/pexels-emre-can-2079438.jpg" alt="restaurant" />
+        <!-- title -->
+        <h3>Reviews</h3>
+        <!-- reviews -->
+        <div class="parent">
+          <article id="review-article" class="review-article">
+            <!-- stars ☆-->
+            <!-- name -->
+            <!-- review text -->
+          </article>
+          <!-- btns -->
+          <!-- <div class="prev-next-btn-container"> -->
+          <button class="prev-btn">◀︎</button>
+          <button class="next-btn">▶︎</button>
+          <!-- </div> -->
+        </div>
+      </section>
     </div>
 
     <!-- Page 2 Menu -->
     <div id="menu-page" class="menu-page">
+      <div class="menu-link-container">
+        <a href="#" onclick="return show('landig-page','menu-page')">
+          <p>Take me back</p>
+        </a>
+      </div>
+
+      <h2>Menu</h2>
       <!-- Btns for filter/sort-->
       <div class="btn-container"></div>
 
       <!--Menu cards-->
-      <section id="menu-cards"></section>
+      <section id="menu-cards" class="menu-cards"></section>
     </div>
 
     <footer>
