@@ -1,6 +1,8 @@
 body {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   font-family: Helvetica, sans-serif;
@@ -31,6 +33,9 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.display {
+  display: block;
 }
 img {
   width: 100%;
@@ -68,7 +73,9 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 70%;
+  width: 70vw;
+  height: 200px;
+  overflow: scroll;
   border: 1px solid #000;
 }
 .review-article h4 {
@@ -87,13 +94,14 @@ h2 {
   background-color: inherit;
 }
 .next-btn {
-  right: 6%;
+  right: -7vw;
 }
 .prev-btn {
-  left: 6%;
+  left: -7vw;
 }
 .menu-page {
   display: none;
+  width: 100%;
 }
 .btn-container {
   display: flex;
@@ -168,6 +176,7 @@ footer p {
     flex-direction: row;
     border-bottom: 1px solid #000;
     width: 40%;
+    max-width: 500px;
     height: 200px;
     padding-bottom: 15px;
     margin: 0 0.5rem 0.6rem 0.5rem;
